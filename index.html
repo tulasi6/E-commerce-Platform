@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">📚 E-Learning</h1>
+      <input type="text" id="searchBar" placeholder="Search courses...">
+      <button onclick="toggleTheme()" class="theme-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Course Section -->
+  <section class="courses">
+    <div class="course-card" data-title="HTML Basics">
+      <h3>HTML Basics</h3>
+      <p>Learn the building blocks of the web with HTML.</p>
+      <button onclick="bookmarkCourse('HTML Basics')">🔖 Bookmark</button>
+    </div>
+
+    <div class="course-card" data-title="CSS Styling">
+      <h3>CSS Styling</h3>
+      <p>Make your websites beautiful with CSS.</p>
+      <button onclick="bookmarkCourse('CSS Styling')">🔖 Bookmark</button>
+    </div>
+
+    <div class="course-card" data-title="JavaScript Fundamentals">
+      <h3>JavaScript Fundamentals</h3>
+      <p>Learn the language of the web.</p>
+      <button onclick="bookmarkCourse('JavaScript Fundamentals')">🔖 Bookmark</button>
+    </div>
+
+    <div class="course-card" data-title="React.js Essentials">
+      <h3>React.js Essentials</h3>
+      <p>Build dynamic web apps with React.</p>
+      <button onclick="bookmarkCourse('React.js Essentials')">🔖 Bookmark</button>
+    </div>
+  </section>
+
+  <!-- Bookmarked Section -->
+  <section class="bookmarks">
+    <h2>📌 My Bookmarked Courses</h2>
+    <ul id="bookmarkList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

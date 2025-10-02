@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --card-bg: #f9f9f9;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.theme-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Course Cards */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.course-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-card button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background: #0056b3;
+}
+
+/* Bookmarks */
+.bookmarks {
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
